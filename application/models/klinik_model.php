@@ -215,10 +215,4 @@ class Klinik_model extends CI_Model
         $this->db->delete('patient', ['medical_record_number' => $mrn]);
         $this->db->delete('medical', ['medical_record_number' => $mrn]);
     }
-
-    public function kosong()
-    {
-        # code...
-        return 0;
-    }
 }
