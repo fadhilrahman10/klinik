@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Jul 2021 pada 10.54
+-- Waktu pembuatan: 19 Jul 2021 pada 11.44
 -- Versi server: 10.4.19-MariaDB
 -- Versi PHP: 7.4.20
 
@@ -66,14 +66,8 @@ CREATE TABLE `medical` (
 --
 
 INSERT INTO `medical` (`id`, `medical_record_number`, `date`, `dokter`, `anamnesa`, `diagnosa`, `theraphy`) VALUES
-(1, 'MRN-000001', '2021-07-14 08:11:37', 'Dr. Ria', '<p>Sakit gigi</p>\r\n', '<p>Sakit gigi</p>\r\n', '<p>Sakit gigi</p>\r\n'),
-(2, 'MRN-000001', '2021-07-14 08:12:40', 'Dr. Annajmi', '<p>asdasdsa</p>\r\n', '<p>asdsada</p>\r\n', '<p>asdasdas</p>\r\n'),
-(3, 'MRN-000001', '2021-07-14 08:12:55', 'Dr. Ria', '<p>wqwqwwq`</p>\r\n', '<p>qwqwqwqwq</p>\r\n', '<p>qwqwqwqw</p>\r\n'),
-(4, 'MRN-000001', '2021-07-14 08:13:14', 'Dr. Ria', '<p>sdfdsfsdfsdfdfdfsfdsfdsfslkfnsdfnlkdnsldnfslkdfneifnpiznfklfnzldkfnfboiknzdjnsoibes</p>\r\n', '<p>dgsdsfad</p>\r\n', '<p>asdadadansalkfneoifnldnfbi;af</p>\r\n'),
-(5, 'MRN-000001', '2021-07-14 08:19:06', 'Dr. Annajmi', '<p>adasdasdasda</p>\r\n', '<p>afsdfsdfsd</p>\r\n', '<p>sdfsdfsdfad</p>\r\n'),
-(6, 'MRN-000001', '2021-07-14 08:19:15', 'Dr. Ria', '<p>asdadasdasd</p>\r\n', '<p>adasfasf</p>\r\n', '<p>adawdawd</p>\r\n'),
 (7, 'MRN-000002', '2021-07-16 01:48:16', 'Dr. Annajmi', '<p>asdasdasdasd</p>\r\n', '<p>asdasdasd</p>\r\n', '<p>asdasdasd</p>\r\n'),
-(8, 'MRN-000001', '2021-07-16 08:46:35', 'Dr. Annajmi', '<p>Sakit Perut</p>\r\n', '<p>Usus Buntu</p>\r\n', '<p>Operasi</p>\r\n\r\n<p> </p>\r\n');
+(9, 'MRN-000003', '2021-07-16 09:32:57', 'Dr. Ria', '<p>Putus Cinta</p>\r\n', '<p>Di tinggal mantan</p>\r\n', '<p>Cari Aktivitas</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -99,8 +93,8 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`medical_record_number`, `name`, `place_of_birth`, `date_of_birth`, `religion`, `gender`, `profession`, `phone_number`, `address`, `date_registered`) VALUES
-('MRN-000001', 'Raihan Murtadha Ramadhan', 'Tangerang', '2000-12-15', 'Islam', 'Laki-laki', 'Mahasiswa', '082268720234', 0x4a6c2e204b7562616e67205261796120506572756d6168616e2043425020426c6f6b204532, '2021-07-14'),
-('MRN-000002', 'Zulfitrida', 'Duri', '1212-12-12', 'Islam', 'Perempuan', 'Pelajar', '082268720234', 0x4a6c204b7574696c616e672053616b7469, '2021-07-16');
+('MRN-000002', 'Zulfitrida', 'Duri', '1212-12-12', 'Islam', 'Perempuan', 'Pelajar', '082268720234', 0x4a6c204b7574696c616e672053616b7469, '2021-07-16'),
+('MRN-000003', 'Otong', 'Lapau Tuak', '2021-07-17', 'Islam', 'Laki-laki', 'Pro Player', '0894334334433', 0x4a6c2e204a616c616e, '2021-07-16');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +126,7 @@ ALTER TABLE `patient`
 -- AUTO_INCREMENT untuk tabel `medical`
 --
 ALTER TABLE `medical`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
